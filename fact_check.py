@@ -43,7 +43,7 @@ try:
     ## Chat-ID do Telegram
     chat_id = 'CHAT-ID-TELEGRAM' # Channel ID
     bot = telegram.Bot(token=telegram_token)
-    
+
     ## Função timer
     def timer(tempo):
         t=tempo
@@ -395,22 +395,22 @@ try:
             fonte = dict[msg]['fonte']
             link = dict[msg]['link']
             autor = dict[msg]['autor']
-            
+
             ## Verifica se o arquivo CSV já existe com um try:
             try:
                 ## Se o arquivo existir abre o arquivo
                 dfopen = pd.read_csv('verifica_news.csv', index_col=0)
-                
+
                 ## Verifica se a URL da notícia já existe na lista de links
                 ## Se não existir adiciona os dados da notícia no arquivo CSV
-                if not dfopen['link'].eq(link).any(): 
+                if not dfopen['link'].eq(link).any():
                     dictpandas = {'title':[title], 'description':[description], 'creator':[autor.title()], 'data':[data], 'img':[img], 'link':[link], 'fonte':[fonte]}
                     df = pd.DataFrame(dictpandas)
                     df.to_csv('verifica_news.csv', mode='a', index = False, header = False)
                     message = f"🔎 {data}\n💡 {fonte}\n\n🗞️ Título: {title}\n📰 Descrição: {description}\n\n🧠 Verificado Por: {autor.title()}\n\n🔗 {link}"
                     bot.send_photo(chat_id, dict[f'{msg}']['img'], message)
                     timer(10)
-                    
+
             ## Caso o arquivo não exista, ele será criado no mesmo diretório onde está o arquivo .py
             except:
                 dictpandas = {'title':[title], 'description':[description], 'creator':[autor.title()], 'data':[data], 'img':[img], 'link':[link], 'fonte':[fonte]}
