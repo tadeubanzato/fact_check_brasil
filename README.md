@@ -4,6 +4,9 @@ A idéia principal desse script é postar em um canal aberto e público do Teleg
 
 *Preciso deixar claro, não desenvolvedor então há oportunidades óbvias de melhoria no código então qualquer um pode ajudar a melhorar o que foi desenvolvido*. :sunglasses:
 
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity) [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE) [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Naereen/badges/)
+</br>
+
 ### Os canais que estão sendo manitorados são:
 - Agência Lupa - https://piaui.folha.uol.com.br/lupa/
 - UOL Confere - https://noticias.uol.com.br/confere
@@ -18,7 +21,7 @@ A idéia principal desse script é postar em um canal aberto e público do Teleg
 ### Setup
 Esse script está rodando em uma Raspberry Pi com linux por isso desenvolvi um Shell script para verificar se o script está rodando a cada 15 minutos. Caso o script pare ele reinicia automaticamente.
 
-### Python Requirements
+### Python Requirements :snake:
 Para instalar os requirements rode o comando `sudo pip3 install -r requirements.txt`.
 Este comando instalará as seguintes bibliotecas do Python:
 - Pandas
@@ -43,10 +46,11 @@ fi
 
 ```
 ### API do Telegram
-Para rodar o programa é preciso criar um Token Key para o Telegram, para fazer isso procure o usuário BotFather no telegram
-<img src="https://cdn-images-1.medium.com/max/1600/1*XolFpjck53uWNRG8dOZz7w.png" width="100" height="100">
+Para rodar o programa é preciso criar um Token Key para o Telegram, para fazer isso procure o usuário BotFather no telegram 
+<img src="https://cdn-images-1.medium.com/max/1600/1*XolFpjck53uWNRG8dOZz7w.png" width="40" height="40">
 
-Ao encontrar o BotFather digite o seguinte comando
+
+#### Ao encontrar o BotFather digite o seguinte comando
 `/newbot` - Para criar um novo bot
 `/setname` - Para dar nome ao bot
 `/setdescription` - Para criar a descrição do bot
@@ -56,7 +60,7 @@ Ao encontrar o BotFather digite o seguinte comando
 
 Depois de feito isso você tem que criar um Canal ou um Grupo do Telegram com seu usuário e adicionar o robô. Eu geralmente adiciono o robô como administrador o que ajudar a não se preocupar se ele pode ou não postar alguma coisa.
 
-### Python
+### Python :snake:
 Adicionei a criação de um arquivo PID que rodo a cada 20 minutos para verificar se o script em Python caiu ou não, e salva um arquivo chamado `check.pid` no diretório /tmp/ do linux conforme script abaixo:
 ```python
 # Número PID
@@ -78,4 +82,9 @@ finally:
 	# Finaliza o arquivo PID
 	os.unlink(pidfile)
 ```
+
+Esses são os detalhes iniciais do projeto, todo o resto está comentado no próprio script.
+Caso crie uma nova versão ou faça algum ajuste avise para que possamos compartilhar este script com mais pessoas.
+[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama)
+
 
