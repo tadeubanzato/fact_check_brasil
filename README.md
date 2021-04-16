@@ -2,6 +2,8 @@
 
 A idéia principal desse script é postar em um canal aberto e público do Telegram toda vez que um novo Fact Check é feito nos principais canais de checagem de fatos do Brasil.
 
+Caso você ache interessante você pode colocar esse robô no grupo de Telegram da família ou daqueles amigos negacionistas que você adora. :grin:
+
 *Preciso deixar claro, não desenvolvedor então há oportunidades óbvias de melhoria no código então qualquer um pode ajudar a melhorar o que foi desenvolvido*. :sunglasses:
 
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/tadeubanzato/fact_check_brasil/graphs/commit-activity) [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/tadeubanzato/fact_check_brasil/blob/main/LICENSE) [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/tadeubanzato/fact_check_brasil)
