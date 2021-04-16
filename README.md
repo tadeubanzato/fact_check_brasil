@@ -46,8 +46,9 @@ fi
 
 ```
 ### API do Telegram - BotFather
-Para rodar o programa é preciso criar um Token Key para o Telegram, para fazer isso procure o usuário BotFather no telegram 
-<img src="https://cdn-images-1.medium.com/max/1600/1*XolFpjck53uWNRG8dOZz7w.png" width="40" height="40">
+Para rodar o programa é preciso criar um Token Key para o Telegram, para fazer isso procure o usuário BotFather no telegram
+
+<img src="https://cdn-images-1.medium.com/max/1600/1*XolFpjck53uWNRG8dOZz7w.png" width="40" height="40"> Link direto: https://web.telegram.org/#/im?p=@BotFather
 
 
 #### Ao encontrar o BotFather digite o seguinte comando
@@ -86,3 +87,5 @@ finally:
 Esses são os detalhes iniciais do projeto, todo o resto está comentado no próprio script.
 Caso crie uma nova versão ou faça algum ajuste avise para que possamos compartilhar este script com mais pessoas.</br></br>
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/tadeubanzato/fact_check_brasil)
+
+
