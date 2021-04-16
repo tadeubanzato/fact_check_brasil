@@ -54,8 +54,8 @@ Para rodar o programa é preciso criar um Token Key para o Telegram, para fazer 
 O jeiro mais fácil de verificar o Chat-ID do Telegram para o bot mandar as mensagens basta entrar na URL com o token `https://api.telegram.org/bot"TOKEN-DO-TELEGRAM"/getUpdates`
 #### Neste link você terá acesso ao JSON do Bot que trará os dados confirme abaixo:
 ```json
-{"ok":true,"result":[{"update_id":0000000,
-"channel_post":{"message_id":76,"sender_chat":{"id":-1234567890,"title":"Fact Check Bot \ud83d\udc4a\ud83c\udffd","username":"factcheckbrasil","type":"channel"},"chat":
+{"ok":true,"result":[{"**update_id":0000000**,
+"channel_post":{"message_id":76,"sender_chat":{**"id":-1234567890**,"title":"Fact Check Bot \ud83d\udc4a\ud83c\udffd","username":"factcheckbrasil","type":"channel"},"chat":
 ```
 **O que é importante neste JSON**</br>
 `update_id":0000000` é o código do seu robô no Telegram</br>
