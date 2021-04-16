@@ -4,7 +4,7 @@ A idéia principal desse script é postar em um canal aberto e público do Teleg
 
 *Preciso deixar claro, não desenvolvedor então há oportunidades óbvias de melhoria no código então qualquer um pode ajudar a melhorar o que foi desenvolvido*. :sunglasses:
 
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity) [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE) [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Naereen/badges/)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/tadeubanzato/fact_check_brasil/graphs/commit-activity) [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/tadeubanzato/fact_check_brasil/blob/main/LICENSE) [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/tadeubanzato/fact_check_brasil)
 </br>
 
 ### Os canais que estão sendo manitorados são:
@@ -17,8 +17,8 @@ A idéia principal desse script é postar em um canal aberto e público do Teleg
 - Aos Fatos - https://www.aosfatos.org/noticias/nas-redes/
 - Boatos - https://www.boatos.org/
 
-## Vamos aos comentários do código:
-### Setup
+## Vamos aos comentários:
+### Configurações iniciais
 Esse script está rodando em uma Raspberry Pi com linux por isso desenvolvi um Shell script para verificar se o script está rodando a cada 15 minutos. Caso o script pare ele reinicia automaticamente.
 
 ### Python Requirements :snake:
@@ -28,7 +28,7 @@ Este comando instalará as seguintes bibliotecas do Python:
 - Telegram
 - xmltodict
 
-### O shell script para fazer essas verificações é súper simples e segue abaixo:
+### Shell script para manter o programa rodando
 ```shell
 #!/bin/sh
 ## Cria variável com o caminho do script Python
@@ -45,7 +45,7 @@ else
 fi
 
 ```
-### API do Telegram
+### API do Telegram - BotFather
 Para rodar o programa é preciso criar um Token Key para o Telegram, para fazer isso procure o usuário BotFather no telegram 
 <img src="https://cdn-images-1.medium.com/max/1600/1*XolFpjck53uWNRG8dOZz7w.png" width="40" height="40">
 
@@ -60,7 +60,7 @@ Para rodar o programa é preciso criar um Token Key para o Telegram, para fazer 
 
 Depois de feito isso você tem que criar um Canal ou um Grupo do Telegram com seu usuário e adicionar o robô. Eu geralmente adiciono o robô como administrador o que ajudar a não se preocupar se ele pode ou não postar alguma coisa.
 
-### Python :snake:
+### Principais observações do código :snake:
 Adicionei a criação de um arquivo PID que rodo a cada 20 minutos para verificar se o script em Python caiu ou não, e salva um arquivo chamado `check.pid` no diretório /tmp/ do linux conforme script abaixo:
 ```python
 # Número PID
@@ -84,7 +84,5 @@ finally:
 ```
 
 Esses são os detalhes iniciais do projeto, todo o resto está comentado no próprio script.
-Caso crie uma nova versão ou faça algum ajuste avise para que possamos compartilhar este script com mais pessoas.
-[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama)
-
-
+Caso crie uma nova versão ou faça algum ajuste avise para que possamos compartilhar este script com mais pessoas.</br>
+[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/tadeubanzato/fact_check_brasil)
