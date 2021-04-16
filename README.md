@@ -24,9 +24,13 @@ Esse script está rodando em uma Raspberry Pi com linux por isso desenvolvi um S
 ### Python Requirements :snake:
 Para instalar os requirements rode o comando `sudo pip3 install -r requirements.txt`.
 Este comando instalará as seguintes bibliotecas do Python:
-- Pandas
-- Telegram
-- xmltodict
+- telegram-send==0.25
+- more-itertools==8.7.0
+- requests==2.25.1
+- beautifulsoup4==4.9.3
+- xmltodict==0.12.0
+- urllib3==1.26.3
+- pandas==1.2.3
 
 ### Shell script para manter o programa rodando
 ```shell
