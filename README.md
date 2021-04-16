@@ -1,4 +1,4 @@
-# Python :snake:, Telegram e Democracia :fire:
+# Python :snake:, Telegram <img src="https://logos-download.com/wp-content/uploads/2016/07/Telegram_logo.png" width="40" height="40"> e Democracia :fire:
 
 A idéia principal desse script é postar em um canal aberto e público do Telegram toda vez que um novo Fact Check é feito nos principais canais de checagem de fatos do Brasil.
 
@@ -44,7 +44,8 @@ fi
 ```
 ### API do Telegram
 Para rodar o programa é preciso criar um Token Key para o Telegram, para fazer isso procure o usuário BotFather no telegram
-![BOTFATHER](https://github.com/tadeubanzato/fact_check_brasil/blob/main/images/Screen%20Shot%202021-04-16%20at%209.16.38%20AM.png "BotFather" | width=100)
+<img src="https://cdn-images-1.medium.com/max/1600/1*XolFpjck53uWNRG8dOZz7w.png" width="100" height="100">
+
 Ao encontrar o BotFather digite o seguinte comando
 `/newbot` - Para criar um novo bot
 `/setname` - Para dar nome ao bot
