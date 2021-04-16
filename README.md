@@ -57,17 +57,17 @@ O jeiro mais fácil de verificar o Chat-ID do Telegram para o bot mandar as mens
 {"ok":true,"result":[{"update_id":0000000,
 "channel_post":{"message_id":76,"sender_chat":{"id":-1234567890,"title":"Fact Check Bot \ud83d\udc4a\ud83c\udffd","username":"factcheckbrasil","type":"channel"},"chat":
 ```
-**O que é importante neste JSON**
-`update_id":0000000` é o código do seu robô no Telegram
+**O que é importante neste JSON**</br>
+`update_id":0000000` é o código do seu robô no Telegram</br>
 `"id":-1234567890` é o ID que tem que ser inserido no código Python
 
 
 #### Ao encontrar o BotFather digite o seguinte comando
-`/newbot` - Para criar um novo bot
-`/setname` - Para dar nome ao bot
-`/setdescription` - Para criar a descrição do bot
-`/setyourpic` - Para adicionar uma foto ao bot (eu usei o https://thispersondoesnotexist.com/ um projeto muito massa que cria foto de pessoas que não existem)
-`/token` - Para criar e verificar o API Token do seu robô
+`/newbot` - Para criar um novo bot</br>
+`/setname` - Para dar nome ao bot</br>
+`/setdescription` - Para criar a descrição do bot</br>
+`/setyourpic` - Para adicionar uma foto ao bot (eu usei o https://thispersondoesnotexist.com/ um projeto muito massa que cria foto de pessoas que não existem)</br>
+`/token` - Para criar e verificar o API Token do seu robô</br>
 `/setprivacy` - Aqui você tem que desligar a privacy para poder deixar o robô postar em um Canal do Telegram ou Groupo
 
 Depois de feito isso você tem que criar um Canal ou um Grupo do Telegram com seu usuário e adicionar o robô. Eu geralmente adiciono o robô como administrador o que ajudar a não se preocupar se ele pode ou não postar alguma coisa.
