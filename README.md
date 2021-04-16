@@ -50,6 +50,17 @@ Para rodar o programa é preciso criar um Token Key para o Telegram, para fazer 
 
 <img src="https://cdn-images-1.medium.com/max/1600/1*XolFpjck53uWNRG8dOZz7w.png" width="40" height="40"> Link direto: https://web.telegram.org/#/im?p=@BotFather
 
+### Chat ID do Telegram
+O jeiro mais fácil de verificar o Chat-ID do Telegram para o bot mandar as mensagens basta entrar na URL com o token `https://api.telegram.org/bot"TOKEN-DO-TELEGRAM"/getUpdates`
+#### Neste link você terá acesso ao JSON do Bot que trará os dados confirme abaixo:
+```json
+{"ok":true,"result":[{"update_id":0000000,
+"channel_post":{"message_id":76,"sender_chat":{"id":-1234567890,"title":"Fact Check Bot \ud83d\udc4a\ud83c\udffd","username":"factcheckbrasil","type":"channel"},"chat":
+```
+**O que é importante neste JSON**
+`update_id":0000000` é o código do seu robô no Telegram
+`"id":-1234567890` é o ID que tem que ser inserido no código Python
+
 
 #### Ao encontrar o BotFather digite o seguinte comando
 `/newbot` - Para criar um novo bot
