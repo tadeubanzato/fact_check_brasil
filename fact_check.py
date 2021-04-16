@@ -24,11 +24,6 @@ from pandas import DataFrame
 import os
 import sys
 
-## Fact Check Group ID: -1001333507683
-## Fact Check Channel ID: -1001483614564
-## Bot Token: 1620011007:AAEW2QLj_IyGyOPorxQqH3XDfFX61ojR1v8
-## https://api.telegram.org/bot1620011007:AAEW2QLj_IyGyOPorxQqH3XDfFX61ojR1v8/getUpdates
-
 # Número PID
 pid = str(os.getpid())
 # Variável com o caminho onde o arquivo será salvo
@@ -43,11 +38,13 @@ f.write(pid)
 
 
 try:
-    # Authenticate to Telegram
-    telegram_token = '1620011007:AAEW2QLj_IyGyOPorxQqH3XDfFX61ojR1v8'
-    chat_id = '-1001483614564' # Channel ID
+    ## Autenticação do Token no Telegram
+    telegram_token = 'TOKEN-TELEGRAM'
+    ## Chat-ID do Telegram
+    chat_id = 'CHAT-ID-TELEGRAM' # Channel ID
     bot = telegram.Bot(token=telegram_token)
-
+    
+    ## Função timer
     def timer(tempo):
         t=tempo
         while t:
@@ -217,7 +214,6 @@ try:
         timer(10)
         sendmessage(dict)
 
-
     #############################################
     ###### G1 FATO OU FAKE COVID SCRAPER ########
     #############################################
@@ -254,7 +250,6 @@ try:
             time.sleep(3)
         timer(10)
         sendmessage(dict)
-
 
     ########################################
     ###### ESTADÃO VERIFICA SCRAPER ########
@@ -341,7 +336,6 @@ try:
         timer(10)
         sendmessage(dict)
 
-
     ##############################
     ###### BOATOS SCRAPER ########
     ##############################
@@ -401,16 +395,23 @@ try:
             fonte = dict[msg]['fonte']
             link = dict[msg]['link']
             autor = dict[msg]['autor']
-
+            
+            ## Verifica se o arquivo CSV já existe com um try:
             try:
+                ## Se o arquivo existir abre o arquivo
                 dfopen = pd.read_csv('verifica_news.csv', index_col=0)
-                if not dfopen['link'].eq(link).any():
+                
+                ## Verifica se a URL da notícia já existe na lista de links
+                ## Se não existir adiciona os dados da notícia no arquivo CSV
+                if not dfopen['link'].eq(link).any(): 
                     dictpandas = {'title':[title], 'description':[description], 'creator':[autor.title()], 'data':[data], 'img':[img], 'link':[link], 'fonte':[fonte]}
                     df = pd.DataFrame(dictpandas)
                     df.to_csv('verifica_news.csv', mode='a', index = False, header = False)
                     message = f"🔎 {data}\n💡 {fonte}\n\n🗞️ Título: {title}\n📰 Descrição: {description}\n\n🧠 Verificado Por: {autor.title()}\n\n🔗 {link}"
                     bot.send_photo(chat_id, dict[f'{msg}']['img'], message)
                     timer(10)
+                    
+            ## Caso o arquivo não exista, ele será criado no mesmo diretório onde está o arquivo .py
             except:
                 dictpandas = {'title':[title], 'description':[description], 'creator':[autor.title()], 'data':[data], 'img':[img], 'link':[link], 'fonte':[fonte]}
                 df = pd.DataFrame(dictpandas)
