@@ -44,7 +44,7 @@ fi
 ```
 ### API do Telegram
 Para rodar o programa é preciso criar um Token Key para o Telegram, para fazer isso procure o usuário BotFather no telegram
-![BOTFATHER](https://github.com/tadeubanzato/fact_check_brasil/blob/main/images/Screen%20Shot%202021-04-16%20at%209.16.38%20AM.png "BOTFATHER")
+![BOTFATHER](https://github.com/tadeubanzato/fact_check_brasil/blob/main/images/Screen%20Shot%202021-04-16%20at%209.16.38%20AM.png "BotFather" | width=100)
 Ao encontrar o BotFather digite o seguinte comando
 `/newbot` - Para criar um novo bot
 `/setname` - Para dar nome ao bot
