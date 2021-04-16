@@ -84,5 +84,5 @@ finally:
 ```
 
 Esses são os detalhes iniciais do projeto, todo o resto está comentado no próprio script.
-Caso crie uma nova versão ou faça algum ajuste avise para que possamos compartilhar este script com mais pessoas.</br>
+Caso crie uma nova versão ou faça algum ajuste avise para que possamos compartilhar este script com mais pessoas.</br></br>
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/tadeubanzato/fact_check_brasil)
