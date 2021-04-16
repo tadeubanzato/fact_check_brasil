@@ -42,6 +42,19 @@ else
 fi
 
 ```
+### API do Telegram
+Para rodar o programa é preciso criar um Token Key para o Telegram, para fazer isso procure o usuário BotFather no telegram
+![BOTFATHER](https://github.com/tadeubanzato/fact_check_brasil/blob/main/images/Screen%20Shot%202021-04-16%20at%209.16.38%20AM.png "BOTFATHER")
+Ao encontrar o BotFather digite o seguinte comando
+`/newbot` - Para criar um novo bot
+`/setname` - Para dar nome ao bot
+`/setdescription` - Para criar a descrição do bot
+`/setyourpic` - Para adicionar uma foto ao bot (eu usei o https://thispersondoesnotexist.com/ um projeto muito massa que cria foto de pessoas que não existem)
+`/token` - Para criar e verificar o API Token do seu robô
+`/setprivacy` - Aqui você tem que desligar a privacy para poder deixar o robô postar em um Canal do Telegram ou Groupo
+
+Depois de feito isso você tem que criar um Canal ou um Grupo do Telegram com seu usuário e adicionar o robô. Eu geralmente adiciono o robô como administrador o que ajudar a não se preocupar se ele pode ou não postar alguma coisa.
+
 ### Python
 Adicionei a criação de um arquivo PID que rodo a cada 20 minutos para verificar se o script em Python caiu ou não, e salva um arquivo chamado `check.pid` no diretório /tmp/ do linux conforme script abaixo:
 ```python
@@ -64,3 +77,4 @@ finally:
 	# Finaliza o arquivo PID
 	os.unlink(pidfile)
 ```
+
