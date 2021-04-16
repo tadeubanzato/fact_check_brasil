@@ -75,6 +75,9 @@ if os.path.isfile(pidfile):
 # Caso contrário abre e salva o arquivo no diretório definido
 f = open(pidfile, "w")
 f.write(pid)
+```
+
+#### Como usar o PID
 ```python
 try:
 	# Código inteiro roda aqui
