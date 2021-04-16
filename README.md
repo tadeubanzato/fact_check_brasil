@@ -1,4 +1,4 @@
-# Python :snake:, Telegram <img src="https://logos-download.com/wp-content/uploads/2016/07/Telegram_logo.png" width="30" height="30"> e Democracia :fire:
+# Python :snake:, Telegram <img src="https://logos-download.com/wp-content/uploads/2016/07/Telegram_logo.png" width="25" height="25"> e Democracia :fire:
 
 A idéia principal desse script é postar em um canal aberto e público do Telegram toda vez que um novo Fact Check é feito nos principais canais de checagem de fatos do Brasil.
 
